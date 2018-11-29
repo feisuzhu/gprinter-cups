@@ -1,0 +1,494 @@
+*PPD-Adobe: "4.3"
+*FormatVersion: "4.3"
+*FileVersion: "1.0"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "Gprinter_GP-1324D.ppd"
+*Manufacturer: "Gprinter"
+*Product: "(GP-1324D)"
+*ModelName: "Gprinter GP-1324D"
+*ShortNickName: "Gprinter GP-1324D"
+*NickName: "Gprinter GP-1324D"
+*PSVersion: "(3010.000) 550"
+*PSVersion: "(3010.000) 651"
+*PSVersion: "(3010.000) 652"
+*PSVersion: "(3010.000) 653"
+*PSVersion: "(3010.000) 704"
+*PSVersion: "(3010.000) 705"
+*PSVersion: "(3010.000) 800"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 1.2
+*cupsManualCopies: False
+*% *cupsFilter: "application/vnd.cups-raster 0 /usr/libexec/cups/filter/rastertobarcodetspl"
+*cupsFilter: "application/vnd.cups-raster 0 /usr/lib/cups/filter/rastertotspl"
+*cupsLanguages: "en"
+
+
+*% cm * 360 / 127
+*% 打印机分辨率
+*% 203dots/inch(8dots/mm)
+*% 打印点尺寸
+*% 0.125x0.125mm(1mm=8dots)
+*% 最大打印宽度
+*% 104mm
+*% 最大打印长度
+*% 2286mm(90")
+
+
+*MaxMediaWidth: "294.80"
+*MaxMediaHeight: "6480"
+*HWMargins: 0.00 0.00 0.00 0.00
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width: 1 points 14.17 294.80
+*ParamCustomPageSize Height: 2 points 14.17 6480
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+*RequiresPageRegion All: True
+*TscAttrib UnitMode: mm
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: w4h5
+*PageSize w30mmh20mm/30mm x 20mm: "<</PageSize[85 57]/ImagingBBox null>>setpagedevice"
+*PageSize w60mmh40mm/60mm x 40mm: "<</PageSize[170 113]/ImagingBBox null>>setpagedevice"
+*PageSize w40mmh70mm/40mm x 70mm: "<</PageSize[113 198]/ImagingBBox null>>setpagedevice"
+*PageSize w100mmh150mm/100mm x 150mm: "<</PageSize[283 425]/ImagingBBox null>>setpagedevice"
+*PageSize w55mmh200mm/55mm x 200mm: "<</PageSize[156 567]/ImagingBBox null>>setpagedevice"
+*PageSize w4h5/4 x 5 (FedEx Label): "<</PageSize[288 360]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: w4h5
+*PageRegion w30mmh20mm/30mm x 20mm: "<</PageSize[85 57]/ImagingBBox null>>setpagedevice"
+*PageRegion w60mmh40mm/60mm x 40mm: "<</PageSize[170 113]/ImagingBBox null>>setpagedevice"
+*PageRegion w40mmh70mm/40mm x 70mm: "<</PageSize[113 198]/ImagingBBox null>>setpagedevice"
+*PageRegion w100mmh150mm/100mm x 150mm: "<</PageSize[283 425]/ImagingBBox null>>setpagedevice"
+*PageRegion w55mmh200mm/55mm x 200mm: "<</PageSize[156 567]/ImagingBBox null>>setpagedevice"
+*PageRegion w4h5/4 x 5 (FedEx Label): "<</PageSize[288 360]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*ImageableArea w30mmh20mm/30mm x 20mm: "0 0 85 57"
+*ImageableArea w60mmh40mm/60mm x 40mm: "0 0 170 113"
+*ImageableArea w40mmh70mm/40mm x 70mm: "0 0 113 198"
+*ImageableArea w100mmh150mm/100mm x 150mm: "0 0 283 425"
+*ImageableArea w55mmh200mm/55mm x 200mm: "0 0 156 567"
+*ImageableArea w4h5/4 x 5 (FedEx Label): "0 0 288 360"
+
+*PaperDimension w30mmh20mm/30mm x 20mm: "85 57"
+*PaperDimension w60mmh40mm/60mm x 40mm: "170 113"
+*PaperDimension w40mmh70mm/40mm x 70mm: "113 198"
+*PaperDimension w100mmh150mm/100mm x 150mm: "283 425"
+*PaperDimension w55mmh200mm/55mm x 200mm: "156 567"
+*PaperDimension w4h5/4 x 5 (FedEx Label): "288 360"
+
+
+*OpenUI *Collate/Collate: Boolean
+*OrderDependency: 200 AnySetup *Collate
+*DefaultCollate: True
+*Collate True/Yes: "%%"
+*Collate False/No: "%%"
+*CloseUI: *Collate
+
+*CloseGroup: General
+
+*OpenGroup: PageSet/Page Options
+
+*OpenUI *PrintSpeed/Print Speed: PickOne
+*OrderDependency: 110 AnySetup *PrintSpeed
+*DefaultPrintSpeed: 75
+*PrintSpeed 20/2.00 in/sec: "%%"
+*PrintSpeed 30/3.00 in/sec: "%%"
+*PrintSpeed 50/5.00 in/sec: "%%"
+*PrintSpeed 75/7.50 in/sec: "%%"
+*CloseUI: *PrintSpeed
+
+*OpenUI *Darkness/Darkness: PickOne
+*OrderDependency: 120 AnySetup *Darkness
+*DefaultDarkness: 7
+*Darkness 0: "%%"
+*Darkness 1: "%%"
+*Darkness 2: "%%"
+*Darkness 3: "%%"
+*Darkness 4: "%%"
+*Darkness 5: "%%"
+*Darkness 6: "%%"
+*Darkness 7: "%%"
+*Darkness 8: "%%"
+*Darkness 9: "%%"
+*Darkness 10: "%%"
+*Darkness 11: "%%"
+*Darkness 12: "%%"
+*Darkness 13: "%%"
+*Darkness 14: "%%"
+*Darkness 15: "%%"
+*CloseUI: *Darkness
+
+*OpenUI *AdjustHoriaontal/Horizontal Offset:PickOne
+*OrderDependency: 130 AnySetup *AdjustHoriaontal
+*DefaultAdjustHoriaontal: 0
+*AdjustHoriaontal 0/0mm: "%%"
+*AdjustHoriaontal 2.83/1mm: "%%"
+*AdjustHoriaontal 5.67/2mm: "%%"
+*AdjustHoriaontal 8.50/3mm: "%%"
+*AdjustHoriaontal 11.34/4mm: "%%"
+*AdjustHoriaontal 14.17/5mm: "%%"
+*AdjustHoriaontal 17.01/6mm: "%%"
+*AdjustHoriaontal 19.84/7mm: "%%"
+*AdjustHoriaontal 22.68/8mm: "%%"
+*AdjustHoriaontal 25.51/9mm: "%%"
+*AdjustHoriaontal 28.35/10mm: "%%"
+*AdjustHoriaontal 31.18/11mm: "%%"
+*AdjustHoriaontal 34.02/12mm: "%%"
+*AdjustHoriaontal 36.85/13mm: "%%"
+*AdjustHoriaontal 39.69/14mm: "%%"
+*AdjustHoriaontal 42.52/15mm: "%%"
+*CloseUI: *AdjustHoriaontal
+
+*OpenUI *AdjustVertical/Vertical Offset:PickOne
+*OrderDependency: 130 AnySetup *AdjustVertical
+*DefaultAdjustVertical: 0
+*AdjustVertical 0/0mm: "%%"
+*AdjustVertical 2.83/1mm: "%%"
+*AdjustVertical 5.67/2mm: "%%"
+*AdjustVertical 8.50/3mm: "%%"
+*AdjustVertical 11.34/4mm: "%%"
+*AdjustVertical 14.17/5mm: "%%"
+*AdjustVertical 17.01/6mm: "%%"
+*AdjustVertical 19.84/7mm: "%%"
+*AdjustVertical 22.68/8mm: "%%"
+*AdjustVertical 25.51/9mm: "%%"
+*AdjustVertical 28.35/10mm: "%%"
+*AdjustVertical 31.18/11mm: "%%"
+*AdjustVertical 34.02/12mm: "%%"
+*AdjustVertical 36.85/13mm: "%%"
+*AdjustVertical 39.69/14mm: "%%"
+*AdjustVertical 42.52/15mm: "%%"
+*CloseUI: *AdjustVertical
+
+*CloseGroup: PageSet
+
+*OpenGroup: Media/Media Setting
+
+*OpenUI *MediaMethod/Method: PickOne
+*OrderDependency: 110 AnySetup *MediaMethod
+*DefaultMediaMethod: Transfer
+*MediaMethod Normal/Use Currently Printer Setting: "%%"
+*MediaMethod Direct/Direct Thermal: "%%"
+*MediaMethod Transfer/Thermal Transfer: "%%"
+*CloseUI: *MediaMethod
+
+*OpenUI *PaperType/Type: PickOne
+*OrderDependency: 120 AnySetup *PaperType
+*DefaultPaperType: LabelGaps
+*PaperType LabelGaps/Label with Gaps: "%%"
+*PaperType LabelMark/Label with Mark: "%%"
+*PaperType Continue/Continue: "%%"
+*CloseUI: *PaperType
+
+*OpenUI *MarkHeight/Gaps Height: PickOne
+*OrderDependency: 150 AnySetup *MarkHeight
+*DefaultMarkHeight: 0
+*MarkHeight 0/0mm: "%%"
+*MarkHeight 2.83/1mm: "%%"
+*MarkHeight 5.67/2mm: "%%"
+*MarkHeight 8.50/3mm: "%%"
+*MarkHeight 11.34/4mm: "%%"
+*MarkHeight 14.17/5mm: "%%"
+*MarkHeight 17.01/6mm: "%%"
+*MarkHeight 19.84/7mm: "%%"
+*MarkHeight 22.68/8mm: "%%"
+*MarkHeight 25.51/9mm: "%%"
+*MarkHeight 28.35/10mm: "%%"
+*MarkHeight 31.18/11mm: "%%"
+*MarkHeight 34.02/12mm: "%%"
+*MarkHeight 36.85/13mm: "%%"
+*MarkHeight 39.69/14mm: "%%"
+*MarkHeight 42.52/15mm: "%%"
+*MarkHeight 45.35/16mm: "%%"
+*MarkHeight 48.19/17mm: "%%"
+*MarkHeight 51.02/18mm: "%%"
+*MarkHeight 53.86/19mm: "%%"
+*MarkHeight 56.69/20mm: "%%"
+*CloseUI: *MarkHeight
+
+*OpenUI *MarkOffset/Gaps Offset: PickOne
+*OrderDependency: 160 AnySetup *MarkOffset
+*DefaultMarkOffset: 0
+*MarkOffset 0/0mm: "%%"
+*MarkOffset 2.83/1mm: "%%"
+*MarkOffset 5.67/2mm: "%%"
+*MarkOffset 8.50/3mm: "%%"
+*MarkOffset 11.34/4mm: "%%"
+*MarkOffset 14.17/5mm: "%%"
+*MarkOffset 17.01/6mm: "%%"
+*MarkOffset 19.84/7mm: "%%"
+*MarkOffset 22.68/8mm: "%%"
+*MarkOffset 25.51/9mm: "%%"
+*MarkOffset 28.35/10mm: "%%"
+*MarkOffset 31.18/11mm: "%%"
+*MarkOffset 34.02/12mm: "%%"
+*MarkOffset 36.85/13mm: "%%"
+*MarkOffset 39.69/14mm: "%%"
+*MarkOffset 42.52/15mm: "%%"
+*CloseUI: *MarkOffset
+
+*OpenUI *VerticalOffset/Vertical Offset: PickOne
+*OrderDependency: 160 AnySetup *VerticalOffset
+*DefaultVerticalOffset: 0
+*VerticalOffset -72.00/-25.4mm: "%%"
+*VerticalOffset -70.87/-25mm: "%%"
+*VerticalOffset -68.03/-24mm: "%%"
+*VerticalOffset -65.20/-23mm: "%%"
+*VerticalOffset -62.36/-22mm: "%%"
+*VerticalOffset -59.53/-21mm: "%%"
+*VerticalOffset -56.69/-20mm: "%%"
+*VerticalOffset -53.86/-19mm: "%%"
+*VerticalOffset -51.02/-18mm: "%%"
+*VerticalOffset -48.19/-17mm: "%%"
+*VerticalOffset -45.35/-16mm: "%%"
+*VerticalOffset -42.52/-15mm: "%%"
+*VerticalOffset -39.69/-14mm: "%%"
+*VerticalOffset -36.85/-13mm: "%%"
+*VerticalOffset -34.02/-12mm: "%%"
+*VerticalOffset -31.18/-11mm: "%%"
+*VerticalOffset -28.35/-10mm: "%%"
+*VerticalOffset -25.51/-9mm: "%%"
+*VerticalOffset -22.68/-8mm: "%%"
+*VerticalOffset -19.84/-7mm: "%%"
+*VerticalOffset -17.01/-6mm: "%%"
+*VerticalOffset -14.17/-5mm: "%%"
+*VerticalOffset -11.34/-4mm: "%%"
+*VerticalOffset -8.50/-3mm: "%%"
+*VerticalOffset -5.67/-2mm: "%%"
+*VerticalOffset -2.83/-1mm: "%%"
+*VerticalOffset 0/0mm: "%%"
+*VerticalOffset 2.83/1mm: "%%"
+*VerticalOffset 5.67/2mm: "%%"
+*VerticalOffset 8.50/3mm: "%%"
+*VerticalOffset 11.34/4mm: "%%"
+*VerticalOffset 14.17/5mm: "%%"
+*VerticalOffset 17.01/6mm: "%%"
+*VerticalOffset 19.84/7mm: "%%"
+*VerticalOffset 22.68/8mm: "%%"
+*VerticalOffset 25.51/9mm: "%%"
+*VerticalOffset 28.35/10mm: "%%"
+*VerticalOffset 31.18/11mm: "%%"
+*VerticalOffset 34.02/12mm: "%%"
+*VerticalOffset 36.85/13mm: "%%"
+*VerticalOffset 39.69/14mm: "%%"
+*VerticalOffset 42.52/15mm: "%%"
+*VerticalOffset 45.35/16mm: "%%"
+*VerticalOffset 48.19/17mm: "%%"
+*VerticalOffset 51.02/18mm: "%%"
+*VerticalOffset 53.86/19mm: "%%"
+*VerticalOffset 56.69/20mm: "%%"
+*VerticalOffset 59.53/21mm: "%%"
+*VerticalOffset 62.36/22mm: "%%"
+*VerticalOffset 65.20/23mm: "%%"
+*VerticalOffset 68.03/24mm: "%%"
+*VerticalOffset 70.87/25mm: "%%"
+*VerticalOffset 72.00/25.4mm: "%%"
+*CloseUI: *VerticalOffset
+
+*CloseGroup: Media
+
+*OpenGroup:Quality/Quality
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 203 AnySetup *Resolution
+*DefaultResolution: 203dpi
+*Resolution 203dpi/203 dpi x 203 dpi: "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+
+*OpenUI *ColorOption/ColorOption: PickOne
+*OrderDependency: 310 AnySetup *ColorOption
+*DefaultColorOption: GrayScale
+*ColorOption None/None:			"<</HWResolution[203 203]/cupsBitsPerColor 8/cupsColorSpace 3>>setpagedevice"
+*ColorOption GrayScale/GrayScale:	"<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*ColorOption Halftone/Halftone:		"<</HWResolution[203 203]/cupsBitsPerColor 8/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *ColorOption
+*CloseGroup: Quality
+
+
+*OpenGroup: PostPrint/Post Print
+
+*OpenUI *PostAction/Post-Print Action: PickOne
+*OrderDependency: 130 AnySetup *PostAction
+*DefaultPostAction: TearOff
+*PostAction None/None: "%%"
+*PostAction TearOff/Tear Off: "%%"
+*PostAction PeelOff/Peel Off: "%%"
+*PostAction Cut/Cut: "%%"
+*PostAction PartialCut/Partial Cut: "%%"
+*CloseUI: *PostAction
+
+*OpenUI *Occurrence/Occurrence: PickOne
+*OrderDependency: 140 AnySetup *Occurrence
+*DefaultOccurrence: Job
+*Occurrence Every/After Every Page: "%%"
+*Occurrence Copies/After Identical Copies: "%%"
+*Occurrence Job/After Job: "%%"
+*Occurrence Specified/After Specified interval: "%%"
+*CloseUI: *Occurrence
+
+*OpenUI *Interval/Interval: PickOne
+*OrderDependency: 150 AnySetup *Interval
+*DefaultInterval: 1
+*Interval 1/1: "%%"
+*Interval 2/2: "%%"
+*Interval 3/3: "%%"
+*Interval 4/4: "%%"
+*Interval 5/5: "%%"
+*Interval 6/6: "%%"
+*Interval 7/7: "%%"
+*Interval 8/8: "%%"
+*Interval 9/9: "%%"
+*Interval 10/10: "%%"
+*CloseUI: *Interval
+
+*OpenUI *FeedOffset/Feed Offset: PickOne
+*OrderDependency: 160 AnySetup *FeedOffset
+*DefaultFeedOffset: 0
+*FeedOffset -72.00/-25.4mm: "%%"
+*FeedOffset -70.87/-25mm: "%%"
+*FeedOffset -68.03/-24mm: "%%"
+*FeedOffset -65.20/-23mm: "%%"
+*FeedOffset -62.36/-22mm: "%%"
+*FeedOffset -59.53/-21mm: "%%"
+*FeedOffset -56.69/-20mm: "%%"
+*FeedOffset -53.86/-19mm: "%%"
+*FeedOffset -51.02/-18mm: "%%"
+*FeedOffset -48.19/-17mm: "%%"
+*FeedOffset -45.35/-16mm: "%%"
+*FeedOffset -42.52/-15mm: "%%"
+*FeedOffset -39.69/-14mm: "%%"
+*FeedOffset -36.85/-13mm: "%%"
+*FeedOffset -34.02/-12mm: "%%"
+*FeedOffset -31.18/-11mm: "%%"
+*FeedOffset -28.35/-10mm: "%%"
+*FeedOffset -25.51/-9mm: "%%"
+*FeedOffset -22.68/-8mm: "%%"
+*FeedOffset -19.84/-7mm: "%%"
+*FeedOffset -17.01/-6mm: "%%"
+*FeedOffset -14.17/-5mm: "%%"
+*FeedOffset -11.34/-4mm: "%%"
+*FeedOffset -8.50/-3mm: "%%"
+*FeedOffset -5.67/-2mm: "%%"
+*FeedOffset -2.83/-1mm: "%%"
+*FeedOffset 0/0mm: "%%"
+*FeedOffset 2.83/1mm: "%%"
+*FeedOffset 5.67/2mm: "%%"
+*FeedOffset 8.50/3mm: "%%"
+*FeedOffset 11.34/4mm: "%%"
+*FeedOffset 14.17/5mm: "%%"
+*FeedOffset 17.01/6mm: "%%"
+*FeedOffset 19.84/7mm: "%%"
+*FeedOffset 22.68/8mm: "%%"
+*FeedOffset 25.51/9mm: "%%"
+*FeedOffset 28.35/10mm: "%%"
+*FeedOffset 31.18/11mm: "%%"
+*FeedOffset 34.02/12mm: "%%"
+*FeedOffset 36.85/13mm: "%%"
+*FeedOffset 39.69/14mm: "%%"
+*FeedOffset 42.52/15mm: "%%"
+*FeedOffset 45.35/16mm: "%%"
+*FeedOffset 48.19/17mm: "%%"
+*FeedOffset 51.02/18mm: "%%"
+*FeedOffset 53.86/19mm: "%%"
+*FeedOffset 56.69/20mm: "%%"
+*FeedOffset 59.53/21mm: "%%"
+*FeedOffset 62.36/22mm: "%%"
+*FeedOffset 65.20/23mm: "%%"
+*FeedOffset 68.03/24mm: "%%"
+*FeedOffset 70.87/25mm: "%%"
+*FeedOffset 72.00/25.4mm: "%%"
+*CloseUI: *FeedOffset
+
+*CloseGroup: PostPrint
+
+*OpenGroup: Effects/Effects
+
+*OpenUI *MirrorImage/Mirror Image: Boolean
+*OrderDependency: 200 AnySetup *MirrorImage
+*DefaultMirrorImage: False
+*MirrorImage True/Yes: "%%"
+*MirrorImage False/No: "%%"
+*CloseUI: *MirrorImage
+
+*OpenUI *NegativeImage/Negative Image: Boolean
+*OrderDependency: 210 AnySetup *NegativeImage
+*DefaultNegativeImage: False
+*NegativeImage True/Yes: "%%"
+*NegativeImage False/No: "%%"
+*CloseUI: *NegativeImage
+
+*CloseGroup: Effects
+
+*OpenGroup: GraphicsFormat/Graphics Format
+
+*OpenUI *DirectBuffer/Direct to Buffer: PickOne
+*OrderDependency: 210 AnySetup *DirectBuffer
+*DefaultDirectBuffer: AUTO
+*DirectBuffer AUTO/Automatic: "%%"
+*CloseUI: *DirectBuffer
+
+*OpenUI *StoredGraphics/Stored Graphics: PickOne
+*OrderDependency: 220 AnySetup *StoredGraphics
+*DefaultStoredGraphics: AUTO
+*StoredGraphics AUTO/Automatic: "%%"
+*CloseUI: *StoredGraphics
+
+*CloseGroup: GraphicsFormat
+
+
+*% 不同打印机的默认字体可能不相同，实际上我不相信他有任何一个
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
+*%
+*% End of PPD
+*%
