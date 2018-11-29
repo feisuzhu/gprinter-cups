@@ -1,0 +1,3 @@
+# Add this to org.cups.usb-quirks
+# Gprinter GP1324D
+0x0471 0x0055 soft-reset
