@@ -60,6 +60,7 @@
 *DefaultPageSize: w4h5
 *PageSize w30mmh20mm/30mm x 20mm: "<</PageSize[85 57]/ImagingBBox null>>setpagedevice"
 *PageSize w60mmh40mm/60mm x 40mm: "<</PageSize[170 113]/ImagingBBox null>>setpagedevice"
+*PageSize w40mmh60mm/40mm x 60mm: "<</PageSize[113 170]/ImagingBBox null>>setpagedevice"
 *PageSize w40mmh70mm/40mm x 70mm: "<</PageSize[113 198]/ImagingBBox null>>setpagedevice"
 *PageSize w100mmh150mm/100mm x 150mm: "<</PageSize[283 425]/ImagingBBox null>>setpagedevice"
 *PageSize w55mmh200mm/55mm x 200mm: "<</PageSize[156 567]/ImagingBBox null>>setpagedevice"
@@ -71,6 +72,7 @@
 *DefaultPageRegion: w4h5
 *PageRegion w30mmh20mm/30mm x 20mm: "<</PageSize[85 57]/ImagingBBox null>>setpagedevice"
 *PageRegion w60mmh40mm/60mm x 40mm: "<</PageSize[170 113]/ImagingBBox null>>setpagedevice"
+*PageRegion w40mmh60mm/40mm x 60mm: "<</PageSize[113 170]/ImagingBBox null>>setpagedevice"
 *PageRegion w40mmh70mm/40mm x 70mm: "<</PageSize[113 198]/ImagingBBox null>>setpagedevice"
 *PageRegion w100mmh150mm/100mm x 150mm: "<</PageSize[283 425]/ImagingBBox null>>setpagedevice"
 *PageRegion w55mmh200mm/55mm x 200mm: "<</PageSize[156 567]/ImagingBBox null>>setpagedevice"
@@ -79,6 +81,7 @@
 
 *ImageableArea w30mmh20mm/30mm x 20mm: "0 0 85 57"
 *ImageableArea w60mmh40mm/60mm x 40mm: "0 0 170 113"
+*ImageableArea w40mmh60mm/40mm x 60mm: "0 0 113 170"
 *ImageableArea w40mmh70mm/40mm x 70mm: "0 0 113 198"
 *ImageableArea w100mmh150mm/100mm x 150mm: "0 0 283 425"
 *ImageableArea w55mmh200mm/55mm x 200mm: "0 0 156 567"
@@ -86,6 +89,7 @@
 
 *PaperDimension w30mmh20mm/30mm x 20mm: "85 57"
 *PaperDimension w60mmh40mm/60mm x 40mm: "170 113"
+*PaperDimension w40mmh60mm/40mm x 60mm: "113 170"
 *PaperDimension w40mmh70mm/40mm x 70mm: "113 198"
 *PaperDimension w100mmh150mm/100mm x 150mm: "283 425"
 *PaperDimension w55mmh200mm/55mm x 200mm: "156 567"
